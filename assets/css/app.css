@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  background: url('../images/background.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.container{
+  width : 100%;
+}
+
+
+.tile {
+  width: 25vmin;
+  height: 25vmin;
+  border: 1vmin solid grey;
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  line-height: 25vmin;
+  position: relative;
+  margin-bottom: 1vmin;
+  font-size: 10vmin;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  vertical-align: middle; /*need to prvent the box from shifting down*/
+}
+
+.x {
+  background: black;
+  color: white;
+}
+
+.o {
+  background: white;
+  color: black;
+}
+
+h1 {
+  margin: 1vmin 0em;
+}
+
+.ticcontainer {
+  width: 82vmin;
+  height: 82vmin;
+  padding: 1vmin;
+  box-sizing: border-box;
+  margin: auto;
+  vertical-align: middle;
+}
