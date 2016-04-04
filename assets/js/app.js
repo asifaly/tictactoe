@@ -6,6 +6,13 @@ var rows = new Array(3).fill(0).map(row => new Array(3).fill(0));
 var cols = new Array(3).fill(0).map(row => new Array(3).fill(0));
 var result;
 $(document).ready(function () {
+
+  //start game
+  $('#start').click(function(){
+    $('#start').hide("explode");
+    $('#game').show("explode");
+  });
+
   $('.tile').click(function (e) {
     var rowid = e.target.id.split("").map(Number)[0];
     var colid = e.target.id.split("").map(Number)[1];
@@ -23,7 +30,6 @@ $(document).ready(function () {
       isX = !isX;
     }
     if (result) {
-      alert("Game Over");
       gameOver();
     }
     //insert x or o into the div, add classes and update array
@@ -78,6 +84,9 @@ function gameOver() {
     $(this).removeClass('x');
     $(this).removeClass('o');
   });
+  $('#game').hide("explode");
+  $('#start').html('<h1>Game Over</h1>');
+  $('#start').show("explode");
   rows = new Array(3).fill(0).map(row => new Array(3).fill(0));
   cols = new Array(3).fill(0).map(row => new Array(3).fill(0));
   isX = true;

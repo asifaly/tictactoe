@@ -41,13 +41,37 @@ body {
 
 h1 {
   margin: 1vmin 0em;
+  font-size: 5em;
 }
 
 .ticcontainer {
   width: 82vmin;
   height: 82vmin;
-  padding: 1vmin;
   box-sizing: border-box;
   margin: auto;
   vertical-align: middle;
+  display: none;
+}
+
+
+#game{
+  display: visible;
+}
+
+#over{
+  display: none;
+  background: white;
+  color: black;
+  line-height: 82vmin;
+  cursor: pointer;
+  opacity: .7;
+}
+
+#start{
+  display: block;
+  background: black;
+  color: white;
+  line-height: 82vmin;
+  opacity: .7;
+  cursor: pointer;
 }
